@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<script src="/javascripts/scripts.js"></script>
+	</head>
+	<body>
+		<h1><%= title %></h1>
+		
+		<button onclick="verJSON()" id="btnJSON">Visualizar en formato JSON</button>
+		<button onclick="volver()" id="btnVolver">Volver</button>
+		
+		<pre><%- JSON.stringify(response, null, 2) %></pre>
+		
+		<section>
+			<% for(let responseIndex in response) { %>
+			<div class="exercise">
+				<b>Exercise name</b>: <%= response[responseIndex].exercise_name %><br />
+				<b>Time</b>: <%= response[responseIndex].time %><br />
+				<b>In time</b>: <%= response[responseIndex].in_time %><br />
+				<b>Results</b>:
+				<% for(let index in response[responseIndex].results) { %>
+					<% if(index > 0) { %>
+					<hr />
+					<% } %>
+					<div class="info">
+						<% for(let label in response[responseIndex].results[index]) { %>
+							<%= label.charAt(0).toUpperCase() + label.slice(1) %>: <%= response[responseIndex].results[index][label] %><br />
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+			<% } %>
+		</section>
+	</body>
+</html>

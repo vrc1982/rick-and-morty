@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font: 16px 'Roboto';
+	background-image: url(../images/633249.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 70px 0 20px 0;
+}
+
+a {
+	color: #00b7ff;
+}
+
+h1 {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.8);
+	margin: 0;
+	color: white;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (max-width: 600px) {
+	section {
+		margin: 0 20px;
+	}
+}
+
+section div.exercise {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.95);
+	color: black;
+	line-height: 1.8;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+	section div.exercise {
+		width: 100%;
+	}
+}
+
+section div.info {
+	line-height: 1.5;
+}
+
+button {
+	background: #eee;
+	border: 1px solid #999;
+	border-radius: 2px;
+	padding: 8px 10px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #ddd;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+button#btnVolver {
+	display: none;
+}
+
+pre {
+	display: none;
+	background: rgba(255, 255, 255, 0.95);
+	margin: 20px 20px 0 20px;
+	padding: 10px 20px;
+	width: 50%;
+	margin: 20px auto 0 auto;
+	box-sizing: border-box;
+}
