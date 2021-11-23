@@ -9,13 +9,13 @@ Creado por Victor Rojas
 Clonar el proyecto
 
 ```bash
-  git clone https://github.com/vrc1982/rick-n-morty.git
+  git clone https://github.com/vrc1982/rick-and-morty.git
 ```
 
 Ir al directorio del proyecto
 
 ```bash
-  cd rick-n-morty
+  cd rick-and-morty
 ```
 
 Instalar dependencias
